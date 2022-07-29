@@ -15,6 +15,13 @@
 </head>
 <body>
     <h1>WELCOME</h1>
-    <p >Today's Date : July 29, 2022</p>
+    <p > 
+        Today's Date: <span id="current_date"></span>
+    </p>
+    <script>
+        const date = new Date().toString();
+        const dateContainer = document.getElementById("current_date");
+        dateContainer.innerHTML = date;
+    </script>
 </body>
 </html>
